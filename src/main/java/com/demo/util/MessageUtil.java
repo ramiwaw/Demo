@@ -12,6 +12,8 @@ public class MessageUtil {
 	
 	public static final String NOT_DELETED = " was not deleted";
 	
+	public static final String VALIDATION_NUMBER = " ID must be a valid number";
+	
 	private MessageUtil() {
 		
 	}

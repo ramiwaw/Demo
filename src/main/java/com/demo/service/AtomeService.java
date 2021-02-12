@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.demo.domain.entity.Atome;
 import com.demo.dto.AtomeDto;
+import com.demo.exception.ServiceLayerException;
 
 /**
  * Service Layer : exposing {@link AtomeDto}
@@ -33,8 +34,8 @@ public interface AtomeService {
 	 * @return one AtomeDto
 	 */
 
-	public AtomeDto findAtomeById(String id);
-	public AtomeDto findAtomeById(Long id);
+	public AtomeDto findAtomeById(String id) throws ServiceLayerException;
+	public AtomeDto findAtomeById(Long id)   throws ServiceLayerException;
 
 	/**
 	 * Delete a single {@link Atome} from database from its id
